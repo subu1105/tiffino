@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-cream font-sans text-charcoal;
+    /* Native widgets (date-picker popup, checkboxes) follow the brand green
+       and stay light even when the OS is in dark mode. */
+    accent-color: #1b4332;
+    color-scheme: light;
+  }
+  input[type='date']::-webkit-calendar-picker-indicator {
+    opacity: 0.55;
+  }
+  ::selection {
+    @apply bg-forest-100 text-forest-900;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-[#f1e9dc] bg-white shadow-card;
+  }
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest-500 focus-visible:ring-offset-2 focus-visible:ring-offset-cream disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-forest-800 text-white shadow-sm hover:bg-forest-700 active:bg-forest-900;
+  }
+  .btn-flame {
+    @apply bg-flame-500 text-white shadow-sm hover:bg-flame-600 active:bg-flame-700 focus-visible:ring-flame-500;
+  }
+  .btn-outline {
+    @apply border border-forest-200 bg-white text-forest-800 hover:border-forest-300 hover:bg-forest-50;
+  }
+  .btn-danger {
+    @apply bg-danger text-white shadow-sm hover:brightness-95 active:brightness-90 focus-visible:ring-danger;
+  }
+  .btn-ghost {
+    @apply text-charcoal/70 hover:bg-forest-50 hover:text-forest-800;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+  .input {
+    @apply w-full rounded-xl border border-[#e7decf] bg-white px-3.5 py-2.5 text-sm text-charcoal transition-all placeholder:text-charcoal/35 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-500/50;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-semibold uppercase tracking-wider text-charcoal/55;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+  .th {
+    @apply whitespace-nowrap px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-charcoal/50;
+  }
+  .td {
+    @apply px-4 py-3 align-middle text-sm;
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}

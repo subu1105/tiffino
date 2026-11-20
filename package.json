@@ -1,0 +1,20 @@
+{
+  "name": "tiffino",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TIFFINO – Smart Tiffin & Cloud Kitchen Management System",
+  "scripts": {
+    "dev:api": "pnpm --filter @tiffino/api dev",
+    "dev:web": "pnpm --filter @tiffino/web dev",
+    "dev:mobile": "pnpm --filter @tiffino/mobile start",
+    "build:api": "pnpm --filter @tiffino/api build",
+    "build:web": "pnpm --filter @tiffino/web build",
+    "test": "pnpm --filter @tiffino/api test",
+    "typecheck": "pnpm -r typecheck",
+    "seed": "pnpm --filter @tiffino/api seed"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.9"
+}

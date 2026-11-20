@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.expo/
+.expo-shared/
+*.log
+# Env files hold real secrets (Atlas password, JWT secret) — never commit.
+# The committed *.example templates document what each app needs.
+.env
+.env.*
+!.env.example
+!.env.production.example
+.local/
+coverage/
+.DS_Store
+web-build/

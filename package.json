@@ -2,7 +2,7 @@
   "name": "tiffino",
   "private": true,
   "version": "1.0.0",
-  "description": "TIFFINO – Smart Tiffin & Cloud Kitchen Management System",
+  "description": "TIFFINO \u2013 Smart Tiffin & Cloud Kitchen Management System",
   "scripts": {
     "dev:api": "pnpm --filter @tiffino/api dev",
     "dev:web": "pnpm --filter @tiffino/web dev",

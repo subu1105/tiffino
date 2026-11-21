@@ -9,7 +9,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://tiffino-api.onrender.com"
+        "EXPO_PUBLIC_API_URL": "https://tiffino-a14a.onrender.com"
       }
     }
   }
